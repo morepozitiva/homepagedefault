@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+a, button{
+   transition: all .3 ease-in;
+}
+
+html{
+   font-size: 10px;
+}
+
+body{
+   background-color: #f6f6f6;
+   font: 300 2.7rem 'Lato', sans-serif;
+}
+
+.container{
+   max-width: 1632px;
+   margin: 0 auto;
+}
+
+.post{
+   text-align: center;
+   margin: 58px auto;
+}
+
+.post__title{
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 3.4rem;
+   /* border-bottom: 4px solid #dbdbdb; */   
+}
+
+.post__text{
+   font-weight: 300;
+   font-size: 1.6rem;
+   line-height: 1.4;
+   max-width: 45%;
+   margin: 0 auto;
+}
+
+.who{
+   display: flex;
+   max-width: 1170px;
+   /* margin-left: 214px; */
+   justify-content: center;
+}
+
+.who__item{
+   margin: 0 7px;
+   position: relative;
+   /* transition: all .5s ease-in; */
+}
+
+.who__item--left{
+   margin-left: 213px;
+}
+
+
+.who__item img{
+   width: 271px;
+   height: 270px;
+}
+
+.who__item:hover .soclink,
+.who__item:focus .soclink{
+   display: block;
+   z-index:9999;
+}
+
+.soclink{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   /* width: 271px; */
+   height: 270px;
+   background-color: #18b5dc;
+   color:#ffffff;
+   display: none;
+   transform: scaleX(1);
+   transition: all .5s ease-in;
+}
+
+
+
+.row{
+   display: flex;
+   margin: 40% 20%;
+   /* justify-content: space-around; */
+   flex-wrap: wrap;
+}
+
+.soclink__item {
+   width: 44px;
+   height: 44px;
+   background-color: #5ecbe7;
+   margin: 0 4px;
+   /* justify-content: space-between; */
+}
+
+.soclink__link{
+   color: #ffffff;
+   /* margin: 30% 10%; */
+}
+
+.soclink__link i{
+   margin: 10px;
+}
+
+.soclink__item:hover .soclink__link{
+   color: #000000;
+}
+
+.who__item:hover .soclink{
+   /* display: block; */
+}
+
+.who__title{
+   font-weight: 700;
+   font-size: 1.8rem;
+   color: #282528;
+}
+
+.who__text{
+   font-weight: 300;
+   font-size: 1.4rem;
+   color: #646464;
+}
+
+@media screen and (max-width: 760px){
+	body{
+		font-size: 16px;
+   }
+   .who{
+      flex-wrap: wrap;
+   }
+   .who__item{
+      margin-bottom: 10px;
+   }
+   .who__item--left{
+      margin-left: 0;
+   }
+}
